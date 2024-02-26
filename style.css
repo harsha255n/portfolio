@@ -1,5 +1,144 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* Add this CSS to your existing style.css file or in a separate stylesheet */
+
+/* Mobile-first approach */
+/* General styles */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    display: none; /* Hide the menu by default */
+}
+
+.menu-btn {
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: 24px;
+}
+
+/* Home section styles */
+.home {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About section styles */
+.about {
+    padding: 80px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Education section styles */
+.education {
+    padding: 80px 0;
+}
+
+/* Skills section styles */
+.skills {
+    padding: 80px 0;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 80px 0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+}
+
+.column.left {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu-btn {
+        display: none; /* Hide the menu button */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .home-content {
+        padding: 0 20px;
+    }
+
+    .about-content,
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        padding: 0;
+        text-align: center;
+    }
+}
+
 
 *{
     margin: 0;
@@ -664,4 +803,5 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
 

@@ -311,11 +311,11 @@ section .title::after{
   .edu-column:last-child {
     margin-right: 0;
 }
-.edu-column-education {
+.edu-column-project {
     flex-basis: calc(50% - 10px); /* Adjust the width of the Education column */
 }
 
-.edu-column-experience {
+.edu-column-project {
     flex-basis: calc(50% - 10px); /* Adjust the width of the Experience column */
 }
   .edu-column .titles {
@@ -371,62 +371,69 @@ section .title::after{
   }
   
 /* skills section styling */
- .title::after{
-    content: "what I Know";
+.skilltitle{
+    color:white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+
+    
 }
+
 .skills {
-    padding-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: calc(30% - 30px);
+    flex-direction: column;
     min-height: auto;
+    padding-bottom: 5rem;
+    background-color: #111;
+   
+  
   }
   .skills-row {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.skills-column {
+.skills-container {
     flex: 1;
-    margin-right: 20px; /* Adjust spacing between columns */
-}
-
-.skills-column:last-child {
-    margin-right: 0;
+    margin-right: 20px; /* Adjust margin as needed */
 }
 
 .skills-column {
-    flex-basis: calc(50% - 10px); /* Adjust the width of the columns */
+    margin-bottom: 20px; /* Adjust margin as needed */
 }
-  .skills-column .skilltitle {
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem;
-  }
-  
-  .skills-content {
-    font-size: 14px;
+
+/* Add your existing CSS styles here */
+
+
+.skill-list{
     position: relative;
-    border: 0.2rem solid rgb(47, 36, 44);
+    padding: 1.9rem;
+    border: 0.2rem solid rgb(135, 116, 130);
     border-radius: 0.6rem;
-    padding: 1.5rem 2.5rem;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .skills-box .skills-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background:rgb(248, 245, 247);
-    z-index: -1;
-    transition: 0.4s;
-  }
-  .skills-content:hover::before {
-    width: 100%;
-  }
-  .skill-list{
-    padding-bottom: 6px;
-  }
-  
+    margin-bottom: 2.5rem;
+    background-color:#111;
+    font-size: 2rem;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+   
+    
+}
+.skills-content{
+    font: size 20px;
+    
+    
+}
+.skills-box{
+   margin-left: 35%;
+   margin-top:2%;
+   width:400px;
+   min-height: 400px;
+
+   
+}
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
